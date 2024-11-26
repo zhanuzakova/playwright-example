@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Playwright tests on TS",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "newman-run-report": "newman run ./postman-collections/Terbine.postman_collection.json -n 1 -r htmlextra"
+  },
   "author": "Meerim Zhanuzakova",
   "license": "ISC",
   "dependencies": {

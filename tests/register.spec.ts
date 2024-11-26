@@ -4,6 +4,12 @@ import { OrgAccountPage } from '../pages/OrgAccount.page';
 import { da, faker } from '@faker-js/faker';
 
 test.describe('Register Organization', ()=> {
+    const data = {
+        company: faker.person.fullName(),
+        address: faker.lorem.sentence(5),
+        firstname: faker.person.firstName(),
+        lastname: faker.person.lastName()
+     }
     // test('Check', async ({ page })=> {
     //     await page.goto('/#/register');
 
@@ -53,13 +59,6 @@ test.describe('Register Organization', ()=> {
 
         /* 3 Version: using faker test data
         */
-
-        const data = {
-           company: faker.person.fullName(),
-           address: faker.lorem.sentence(5),
-           firstname: faker.person.firstName(),
-           lastname: faker.person.lastName()
-        }
 
         await orgPage.fillForm(data.company, data.address,
             "Kyrgyzstan", "Chuy", "720000", data.firstname, data.lastname, "996888555111",
