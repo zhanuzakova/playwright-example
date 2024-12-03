@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import { assert } from 'console';
-import { OrgAccountPage } from '../pages/OrgAccount.page';
+import { OrgAccountPage } from '../../pages/OrgAccount.page';
 import { da, faker } from '@faker-js/faker';
 
 test.describe('Register Organization', ()=> {

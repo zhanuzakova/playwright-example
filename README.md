@@ -21,3 +21,12 @@ Then run the test:
 `npm run newman-run-report`
 
 Reveal just created test report via Windows Explorer and do your screenshots
+
+## Add and configure tsconfig
+
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+## Structure
+test
+models
+MVC, MVT
